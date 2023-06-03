@@ -7,15 +7,15 @@ import CustomLoader from './Loader/Loader.jsx';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
 export const App = () => {
-  const [search, setSearch] = useState('');
+  
   const [images, setImages] = useState([]);
   const [query, setQuery] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [page, setPage] = useState(1);
-  const [per_page, setPer_page] = useState(0);
+
   const [totalHits, setTotalHits] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-  const [scrollPosition, setScrollPosition] = useState(0);
+  
 
   const handleSubmit = async (evt) => {
     evt.preventDefault();
